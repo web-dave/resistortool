@@ -3,6 +3,18 @@
   position: relative;
   box-sizing: border-box;
   left: -50px;
+  .leg-start {
+    border-top: solid silver 4px;
+    position: relative;
+    top: 35px;
+    left: -50px;
+  }
+  .leg-end {
+    border-top: solid silver 4px;
+    position: relative;
+    top: 31px;
+    left: 125px;
+  }
   .resistor-body {
     background-color: #aaa;
     border: 2px solid #555;
