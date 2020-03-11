@@ -17,6 +17,7 @@ export class AppComponent {
   a3 = false;
   a4 = false;
   a5 = false;
+
   resistor = [
     {
       color: 'green',

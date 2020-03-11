@@ -94,5 +94,12 @@
     >
     <span>&nbsp;&nbsp;</span>
     <span *ngIf="resistor[4]">{{ resistor[4].value }}</span>
+    <br />
+    <span>{{
+      (third
+        ? resistor[0].value + '' + resistor[1].value + '' + resistor[2].value
+        : resistor[0].value + '' + resistor[1].value
+      ) | eseries: third
+    }}</span>
   </h4>
 </div>

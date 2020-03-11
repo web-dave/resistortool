@@ -5,9 +5,10 @@ import { AppComponent } from './app.component';
 import { FormatNumberPipe } from './format-number.pipe';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { EseriesPipe } from './eseries.pipe';
 
 @NgModule({
-  declarations: [AppComponent, FormatNumberPipe],
+  declarations: [AppComponent, FormatNumberPipe, EseriesPipe],
   imports: [BrowserModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
   providers: [],
   bootstrap: [AppComponent]
