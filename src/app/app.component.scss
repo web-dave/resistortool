@@ -93,11 +93,11 @@
   display: block;
 }
 
-.ring1:hover .dropdown-content,
-.ring2:hover .dropdown-content,
-.ring3:hover .dropdown-content,
-.ring4:hover .dropdown-content,
-.ring5:hover .dropdown-content {
+.ring1.active .dropdown-content,
+.ring2.active .dropdown-content,
+.ring3.active .dropdown-content,
+.ring4.active .dropdown-content,
+.ring5.active .dropdown-content {
   display: block;
   z-index: 99999;
 }

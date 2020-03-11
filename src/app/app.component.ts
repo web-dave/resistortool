@@ -12,6 +12,11 @@ export class AppComponent {
   toleranceList;
   multiplierList;
   valuesList;
+  a1 = false;
+  a2 = false;
+  a3 = false;
+  a4 = false;
+  a5 = false;
   resistor = [
     {
       color: 'green',
@@ -34,20 +39,6 @@ export class AppComponent {
       value: '5%'
     }
   ];
-  // colors = [
-  //   'black',
-  //   'brown',
-  //   'red',
-  //   'orange',
-  //   'yellow',
-  //   'green',
-  //   'blue',
-  //   'violet',
-  //   'grey',
-  //   'white',
-  //   'gold',
-  //   'silver'
-  // ];
 
   values = {
     black: 0,

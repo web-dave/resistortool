@@ -2,7 +2,12 @@
 <button (click)="third = !third">Third Ring</button>
 <div class="resistor">
   <div class="resistor-body resistor-body-start">
-    <div class="ring ring1" [style.background-color]="resistor[0].color">
+    <div
+      class="ring ring1"
+      [style.background-color]="resistor[0].color"
+      (click)="a1 = !a1"
+      [ngClass]="{ active: a1 }"
+    >
       <div class="dropdown-content">
         <a
           *ngFor="let val of valuesList"
@@ -14,7 +19,12 @@
     </div>
   </div>
   <div class="resistor-body resistor-body-middle">
-    <div class="ring ring2" [style.background-color]="resistor[1].color">
+    <div
+      class="ring ring2"
+      [style.background-color]="resistor[1].color"
+      (click)="a2 = !a2"
+      [ngClass]="{ active: a2 }"
+    >
       <div class="dropdown-content">
         <a
           *ngFor="let val of valuesList"
@@ -28,6 +38,8 @@
       *ngIf="third"
       class="ring ring3"
       [style.background-color]="resistor[2].color"
+      (click)="a3 = !a3"
+      [ngClass]="{ active: a3 }"
     >
       <div class="dropdown-content">
         <a
@@ -38,7 +50,12 @@
         ></a>
       </div>
     </div>
-    <div class="ring ring4" [style.background-color]="resistor[3].color">
+    <div
+      class="ring ring4"
+      [style.background-color]="resistor[3].color"
+      (click)="a4 = !a4"
+      [ngClass]="{ active: a4 }"
+    >
       <div class="dropdown-content">
         <a
           *ngFor="let val of multiplierList"
@@ -50,7 +67,12 @@
     </div>
   </div>
   <div class="resistor-body resistor-body-end">
-    <div class="ring ring5" [style.background-color]="resistor[4].color">
+    <div
+      class="ring ring5"
+      [style.background-color]="resistor[4].color"
+      (click)="a5 = !a5"
+      [ngClass]="{ active: a5 }"
+    >
       <div class="dropdown-content">
         <a
           *ngFor="let val of toleranceList"
